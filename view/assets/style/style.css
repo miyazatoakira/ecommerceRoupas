@@ -1,141 +1,133 @@
-/* Variáveis */  
-  :root {
+/* Variáveis */
+:root { /* PALHETA DE CORES DO PROJETO */
+    --secondary-color: #f3b191;
+    --third-color: #f6d2be;
     --c-body: #ffffff;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
-  }
-  
-  @font-face {
+}
+/* FONTES DO PROJETO */
+@font-face {
     font-family: gotham;
     src: url("../fonts/Gotham-Book.otf");
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: gotham-light;
     src: url("../fonts/Gotham-Light.otf");
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: gotham-medium;
     src: url("../fonts/Gotham-Medium.otf");
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: gotham-bold;
     src: url("../fonts/Gotham-Bold.otf");
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  h1,
-  .h1 {
+}
+
+h1,
+.h1 {
     font-family: gotham-bold;
-  }
-  
-  h2,
-  h3,
-  h4,
-  h5,
-  .h2,
-  .h3,
-  .h4,
-  .h5 {
+}
+
+h2,
+h3,
+h4,
+h5,
+.h2,
+.h3,
+.h4,
+.h5 {
     font-family: gotham;
     font-weight: 500;
     color: var(--30_color);
-  }
-  
-  .p,
-  p {
+}
+
+.p,
+p {
     font-family: gotham;
     font-weight: 500;
     color: silver;
-  }
-  
-  .theme-shadow {
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+.theme-shadow {
     box-shadow: var(--box-shadow);
-  }
-  
-  .line {
+}
+
+.line {
     width: 60px;
     height: 4px;
     margin: 16px auto 24px auto;
-  }
+}
 
 
 
-  /* NAVBAR */
-  nav{
+/* NAVBAR */
+nav {
     box-shadow: var(--box-shadow);
-  }
-  .logo-brand{
-    width: 15rem;
-  }
-  .nav-link{
-    font-family: gotham-medium;
-  }
+    background-color: transparent;
+}
 
-  .vertical-line{
-    width: 2px;
+.logo-brand {
+    width: 15rem;
+}
+
+.nav-link {
+    font-family: gotham-medium;
+}
+.nav-item{
+    font-size: 0.85rem;
+}
+.vertical-line { /*  Elemento Linha Vertical - Como pode ser visto na navbar (entre botao carrinho de COMPRAS e TROCA DE TEMA */ 
+    width: 1px;
     border-radius: 5px;
     height: 45px;
     background-color: #a5a5b0;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-/*------ Configurações ------*/
-.container {
-    --color: #a5a5b0;
-    --size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    font-size: var(--size);
-    user-select: none;
-    fill: var(--color);
-  }
-  
-  .container .moon {
-    position: absolute;
-    animation: keyframes-fill .5s;
-  }
-  
-  .container .sun {
-    position: absolute;
-    display: none;
-    animation: keyframes-fill .5s;
-  }
-  
-  /* ------ Evento - On check ------ */
-  .container input:checked ~ .moon {
-    display: none;
-  }
-  
-  .container input:checked ~ .sun {
-    display: block;
-  }
-  
-  /* ------ Esconder checkbox padrão ------ */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* ------ Animação ------ */
-  @keyframes keyframes-fill {
-    0% {
-      transform: rotate(-360deg) scale(0);
-      opacity: 0;
-    }
-  
-    75% {
-      transform: rotate(25deg);
-    }
-  }
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.cadastro{
+    background-color: var(--third-color);
+}
+.cadastro:hover{
+    opacity: 70%;
+    transition: var(--transition);
+}
+.login{
+    border:0.5px, solid var(--third-color);
+}
+.nav-item .bi-cart{
+    font-size: 1.2rem;
+}
+
+
+
+/* CAROUSEL */
+.myCarousel {
+    margin-bottom: 4rem;
+}
+.hero h1{
+    color: #ffffff;
+}
+
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}

@@ -16,24 +16,15 @@
   const updateLogo = (theme) => {
     const logo = document.getElementById('logo-brand');
     const navbar = document.querySelector('.navbar');
-    const moon = document.querySelector('#moon-stars-fill');
-    const sun = document.querySelector('#sun-fill');
+ 
 
     if (!logo) return;
 
     if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       logo.src = './assets/images/navbar-brand-dark.png';
-      navbar.style.backgroundColor = '#212529';
-      moon.style.color = '#000000';
-      sun.style.color = '#000000';
 
     } else {
       logo.src = './assets/images/navbar-brand-light.png';
-      navbar.style.backgroundColor = '#ffffff';
-      moon.style.color = '#ffffff';
-      sun.style.color = '#ffffff';
-
-
     }
   }
 
