@@ -7,10 +7,10 @@
 	<li>Tamanhos</li>
 	<li>Vendas</li>
 </ul>
-<h2>Apresentação:</h2>
+<h2>Apresentacao:</h2>
 <ul>
 	<li>Home</li>
 	<li>Quem Somos</li>
 	<li>Pesquisa</li>
-	<li>Acesso à loja</li>
+	<li>Acesso a loja</li>
 </ul>
