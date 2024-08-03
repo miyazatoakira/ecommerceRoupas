@@ -65,6 +65,15 @@ nav a{
     box-shadow: var(--box-shadow);
 }
 
+.card-price{
+    font-family: gotham-bold;
+    color: rgb(20, 20, 20);
+    font-size: 1.2rem;
+}
+.card-text{
+    text-align: justify;
+}
+
 .line {
     width: 60px;
     height: 4px;
@@ -86,7 +95,7 @@ nav {
 .nav-link {
     font-family: gotham-medium;
 }
-.nav-item{
+nav .nav-item{
     font-size: 0.85rem;
 }
 .vertical-line { /*  Elemento Linha Vertical - Como pode ser visto na navbar (entre botao carrinho de COMPRAS e TROCA DE TEMA */ 
@@ -122,6 +131,9 @@ nav {
     color: #ffffff;
 }
 
+.carousel-control-prev, .carousel-control-next{
+    background-color: black;
+}
 
 .carousel-caption {
     bottom: 3rem;

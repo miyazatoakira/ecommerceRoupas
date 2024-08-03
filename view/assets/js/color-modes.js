@@ -15,16 +15,16 @@
 
   const updateLogo = (theme) => {
     const logo = document.getElementById('logo-brand');
-    const navbar = document.querySelector('.navbar');
- 
+    const carousel = document.getElementById("carouselExample");
 
     if (!logo) return;
 
     if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       logo.src = './assets/images/navbar-brand-dark.png';
-
+      carousel.className = 'carousel slide';
     } else {
       logo.src = './assets/images/navbar-brand-light.png';
+      carousel.className = 'carousel carousel-dark slide';
     }
   }
 
