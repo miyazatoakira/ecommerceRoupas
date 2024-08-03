@@ -1,0 +1,141 @@
+/* Variáveis */  
+  :root {
+    --c-body: #ffffff;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+  }
+  
+  @font-face {
+    font-family: gotham;
+    src: url("../fonts/Gotham-Book.otf");
+  }
+  
+  @font-face {
+    font-family: gotham-light;
+    src: url("../fonts/Gotham-Light.otf");
+  }
+
+  @font-face {
+    font-family: gotham-medium;
+    src: url("../fonts/Gotham-Medium.otf");
+  }
+
+  @font-face {
+    font-family: gotham-bold;
+    src: url("../fonts/Gotham-Bold.otf");
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  .h1 {
+    font-family: gotham-bold;
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    font-family: gotham;
+    font-weight: 500;
+    color: var(--30_color);
+  }
+  
+  .p,
+  p {
+    font-family: gotham;
+    font-weight: 500;
+    color: silver;
+  }
+  
+  .theme-shadow {
+    box-shadow: var(--box-shadow);
+  }
+  
+  .line {
+    width: 60px;
+    height: 4px;
+    margin: 16px auto 24px auto;
+  }
+
+
+
+  /* NAVBAR */
+  nav{
+    box-shadow: var(--box-shadow);
+  }
+  .logo-brand{
+    width: 15rem;
+  }
+  .nav-link{
+    font-family: gotham-medium;
+  }
+
+  .vertical-line{
+    width: 2px;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #a5a5b0;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+/*------ Configurações ------*/
+.container {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+  
+  .container .moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+  }
+  
+  .container .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+  }
+  
+  /* ------ Evento - On check ------ */
+  .container input:checked ~ .moon {
+    display: none;
+  }
+  
+  .container input:checked ~ .sun {
+    display: block;
+  }
+  
+  /* ------ Esconder checkbox padrão ------ */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ------ Animação ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: rotate(-360deg) scale(0);
+      opacity: 0;
+    }
+  
+    75% {
+      transform: rotate(25deg);
+    }
+  }
