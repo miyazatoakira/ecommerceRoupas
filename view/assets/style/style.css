@@ -76,8 +76,8 @@ nav a{
 
 .line {
     width: 60px;
-    height: 4px;
-    margin: 16px auto 24px auto;
+    height: 10px;
+    background-color: var(--third-color);
 }
 
 
@@ -116,6 +116,8 @@ nav .nav-item{
 }
 .login{
     border:0.5px, solid var(--third-color);
+    border-top-right-radius:2% ;
+    border-bottom-right-radius:2% ;
 }
 .nav-item .bi-cart{
     font-size: 1.2rem;
@@ -142,4 +144,14 @@ nav .nav-item{
 
 .carousel-item {
     height: 32rem;
+}
+
+/* LOGIN */
+.bemvindo{
+    background-color: var(--secondary-color);
+}
+
+.social-icons .bi:hover{
+    transition: ease 0.3s;
+    color: #a5a5b0;
 }
