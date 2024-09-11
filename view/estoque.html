@@ -104,19 +104,31 @@
             </ul>
         </div>
     </nav>
-    <form action="" method="post">
-        <input type="number" id="idEst" class="blockI" name="idEst">
-        <label for="idEst">Insira o codigo de indentificação do produto</label>
 
-        <input type="number" id="lote" class="blockI" name="lote">
-        <label for="idEst">Insira o numero do lote do produto</label>
+        <h2 class="text-center mt-5">Cadastro de estoque</h2>
 
-        <input type="number" id="qtdd" class="blockI" name="qtdd">
-        <label for="idEst">Insira a quantidade que produtos à adicionar no estoque</label>
-
-        <input type="date" id="data" class="blockI" name="data">
-        <label for="idEst">Insira a data de inserção dos novos produtos</label>
-    </form>
+        <div class="container mt-5 col-6 p-2 card">
+            <form method="post">
+                <div class="mb-3 mt-5 md-3">
+                    <label for="idEst" class="fs-5">Insira o codigo de indentificação do produto:</label>
+                    <input type="number" id="idEst" class="blockI" name="idEst">
+                </div>
+                <div class="mb-3">
+                    <label for="idEst" class="fs-5">Insira o numero do lote do produto:</label>
+                    <input type="number" id="lote" class="blockI" name="lote">
+                </div>
+                <div class="mb-3">
+                    <label for="idEst" class="fs-5">Insira a quantidade que produtos à adicionar no estoque:</label>
+                    <input type="number" id="qtdd" class="blockI" name="qtdd">
+                </div>
+                <div class="mb-3">
+                    <label for="idEst" class="fs-5">Insira a data de inserção dos novos produtos:</label>
+                    <input type="date" id="data" class="blockI" name="data">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+ 
 
 
 </body>

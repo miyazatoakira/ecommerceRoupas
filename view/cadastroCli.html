@@ -48,12 +48,12 @@
                         <label for="floatingInput">Insira seu Sobrenome</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Insira seu telefone">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Insira seu telefone">
                         <label for="floatingInput">Insira seu telefone</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Confirmar senha">
+                        <label for="floatingPassword">Confirmar senha</label>
                     </div>
                     <div class="row">
                         <div class="col-6 my-3">
@@ -77,52 +77,39 @@
                     </div>
                 </div>
                 <hr />
+                <form action="." method="get">
                 <div class="row justify-content-center">
                     <div class="col-10">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Insira seu Endereço">
-                            <label for="floatingInput">Insira seu Endereço</label>
+                            <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" />
+                            <label for="floatingInput">Insira seu CEP</label>
                         </div>
                     </div>
                     <div class="col-5">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Insira seu Cidade">
-                            <label for="floatingInput">Insira seu Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Insira seu Cidade">
+                            <label for="floatingInput">Insira sua Cidade</label>
                         </div>
                     </div>
+                    
                     <div class="col-3">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Insira seu CEP">
-                            <label for="floatingInput">Insira seu CEP</label>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="rua" placeholder="Insira seu Endereço">
+                                <label for="floatingInput">Insira sua Rua</label>
+                            </div>
                         </div>
+
+                    </form>
                     </div>
                     <div class="col-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option class="text-uppercase" selected>UF</option>
-                            <option class="text-uppercase" value="ac">ac</option>
-                            <option class="text-uppercase" value="al">al</option>
-                            <option class="text-uppercase" value="ap">ap</option>
-                            <option class="text-uppercase" value="am">am</option>
-                            <option class="text-uppercase" value="ba">ba</option>
-                            <option class="text-uppercase" value="ce">ce</option>
-                            <option class="text-uppercase" value="df">df</option>
-                            <option class="text-uppercase" value="es">es</option>
-                            <option class="text-uppercase" value="go">go</option>
-                            <option class="text-uppercase" value="ma">ma</option>
-                            <option class="text-uppercase" value="mt">mt</option>
-                            <option class="text-uppercase" value="ms">ms</option>
-                            <option class="text-uppercase" value="mg">mg</option>
-                            <option class="text-uppercase" value="pi">pi</option>
-                            <option class="text-uppercase" value="rj">rj</option>
-                            <option class="text-uppercase" value="rn">rn</option>
-                            <option class="text-uppercase" value="rs">rs</option>
-                            <option class="text-uppercase" value="ro">ro</option>
-                            <option class="text-uppercase" value="rr">rr</option>
-                            <option class="text-uppercase" value="sc">sc</option>
-                            <option class="text-uppercase" value="sp">sp</option>
-                            <option class="text-uppercase" value="se">se</option>
-                            <option class="text-uppercase" value="to">to</option>
-                        </select>
+                            <div class="form-floating mb-3">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="uf" placeholder="Insira seu Endereço">
+                                    <label for="floatingInput">Insira o UF</label>
+                                </div>
+                            </div>
                     </div>
                     <div class="col-10 mt-3">
                         <div class="form-check">
@@ -143,5 +130,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+<script src="../view/assets/js/API.js"></script>
 
 </html>

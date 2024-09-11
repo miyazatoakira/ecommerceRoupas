@@ -1,6 +1,12 @@
 # Projeto de Loja de Roupas - Sistemas Web I
 <h2>Abrange:</h2>
 <ul>
+	<li>Augusto Akira</li>
+	<li>Joao Pedro Cardoso</li>
+	<li>Murilo Gonzalez</li>
+	<li>Rian Junio</li>
+</ul>
+<ul>
 	<li>Cadastro</li>
 	<li>Produtos</li>
 	<li>Clientes</li>
