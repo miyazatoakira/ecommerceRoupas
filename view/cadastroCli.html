@@ -10,17 +10,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    </head>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hhttps://cdnjs.com/libraries/jquery.mask"></script>
+</head>
+
     <body>
-        
-        
+
+
         <main class="container-fluid mt-5">
             <form action="#">
                 <div class="row justify-content-center mt-5">
                     <div class="col-10 mb-3">
                         <h1 class="h1">Cadastrar-se</h1>
                         <div class="line"></div>
+                    </div>
+                    <div class="col-10">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="text" class="form-control" placeholder="Nome de usuário" aria-label="Nome de usuário" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="col-5">
                         <div class="form-floating mb-3">
@@ -31,6 +39,7 @@
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">E-mail</label>
                         </div>
+
                     <div class="form-floating">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
                         <label for="floatingPassword">Senha</label>
@@ -48,7 +57,7 @@
                         <label for="floatingInput">Insira seu Sobrenome</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="floatingInput" placeholder="Insira seu telefone">
+                        <input type="text" value="" class="form-control telefone" size="15" id="floatingInput" placeholder="Insira seu telefone">
                         <label for="floatingInput">Insira seu telefone</label>
                     </div>
                     <div class="form-floating">
@@ -79,11 +88,16 @@
                 <hr />
                 <form action="." method="get">
                     <div class="row justify-content-center">
-                        <div class="col-10">
+                        <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input  name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="" placeholder="Insira seu CEP"
-                                onblur="pesquisacep(this.value);" />
-                                <label for="floatingInput">Insira seu CEP</label>
+                                <input type="text" class="form-control" id="rua" placeholder="Insira sua Rua">
+                                <label for="floatingInput">Insira sua Rua</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" size="6" maxlength="6" id="nCasa" placeholder="Insira Nº">
+                                <label for="floatingInput">Insira nº</label>
                             </div>
                         </div>
                         <div class="col-5">
@@ -92,15 +106,16 @@
                                 <label for="floatingInput">Insira sua Cidade</label>
                             </div>
                         </div>
-                        
+
                         <div class="col-3">
                             <div class="form-floating mb-3">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="rua" placeholder="Insira seu Endereço">
-                                    <label for="floatingInput">Insira sua Rua</label>
+                                    <input  name="cep" class="form-control cep" type="text" id="cep" value="" size="10" maxlength="10" placeholder="Insira seu CEP"
+                                    onblur="pesquisacep(this.value);" />
+                                    <label for="floatingInput">Insira seu CEP</label>
                                 </div>
                             </div>
-                            
+
                         </form>
                     </div>
                     <div class="col-2">
@@ -111,6 +126,14 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-10">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Adicione um complemento">
+                            <label for="floatingInput">Adicione um complemento</label>
+                        </div>
+                    </div>
+
                     <div class="col-10 mt-3">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="agree" id="flexCheckDefault">
@@ -127,17 +150,14 @@
         </form>
     </main>
 </body>
-<script>
-    $(document).ready(function(){
-  $('#cep').mask("00000-000")
-});
-</script>
-<script src="https://cdnjs.com/libraries/jquery.mask"></script>
-<script src="http://www.jsdelivr.com/projects/jquery.mask"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
+<script src="./assets/js/jquery.mask.js">
+</script>
 <script src="../view/assets/js/API.js"></script>
+<script>
+$('.cep').mask('00000-000');
+$('.telefone').mask('(00) 00000-0000');
+</script>
 
 </html>
