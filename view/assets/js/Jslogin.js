@@ -10,5 +10,3 @@ document.getElementById('view').addEventListener('mouseup', function () {
 document.getElementById('view').addEventListener('mousemove', function () {
     document.getElementById('pass').type = 'password';
 });
-
-// (IMPORTANTE ESTÁ COM BUG NA HORA DE COLOCAR A SENHA.  A SENHA FICA VISIVEL ATÉ PASSAR O MOUSE POR CIMA, LOGO APÓS FUNCIONA NORMAL)

@@ -1,5 +1,4 @@
 <?php
-
     $nomeUsu = $_POST['nomeusu'];
     $cpf = $_POST['CPF'];
     $tel = $_POST['tel'];
@@ -14,6 +13,4 @@
     $bairro = $_POST[''];
     $cidade = $_POST[''];
     $uf = $_POST[''];
-
-
 ?> 
