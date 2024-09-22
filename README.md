@@ -19,5 +19,5 @@
 	<li>Augusto Akira</li>
 	<li>Joao Pedro Cardoso</li>
 	<li>Murilo Gonzalez</li>
-	<li>Rian Junio</li>
+	<li>Rian Junior</li>
 </ul>
