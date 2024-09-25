@@ -1,11 +1,13 @@
 /* Variáveis */
-:root { /* PALHETA DE CORES DO PROJETO */
+:root {
+    /* PALHETA DE CORES DO PROJETO */
     --secondary-color: #f3b191;
     --third-color: #f6d2be;
     --c-body: #ffffff;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
 }
+
 /* FONTES DO PROJETO */
 @font-face {
     font-family: gotham;
@@ -56,31 +58,27 @@ p {
     color: silver;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-
 }
 
 .theme-shadow {
     box-shadow: var(--box-shadow);
 }
 
-.card-price{
+.card-price {
     font-family: gotham-bold;
-    color: rgb(20, 20, 20);
     font-size: 1.2rem;
 }
-.card-text{
+.card-text {
     text-align: justify;
 }
 
 .line {
     width: 60px;
-    height: 4px;
-    margin: 16px auto 24px auto;
+    height: 10px;
+    background-color: var(--third-color);
 }
-
-
 
 /* NAVBAR */
 nav {
@@ -95,10 +93,11 @@ nav {
 .nav-link {
     font-family: gotham-medium;
 }
-nav .nav-item{
+nav .nav-item {
     font-size: 0.85rem;
 }
-.vertical-line { /*  Elemento Linha Vertical - Como pode ser visto na navbar (entre botao carrinho de COMPRAS e TROCA DE TEMA */ 
+.vertical-line {
+    /*  Elemento Linha Vertical - Como pode ser visto na navbar (entre botao carrinho de COMPRAS e TROCA DE TEMA */
     width: 1px;
     border-radius: 5px;
     height: 45px;
@@ -107,31 +106,27 @@ nav .nav-item{
     margin-left: 10px;
 }
 
-.cadastro{
+.cadastro {
     background-color: var(--third-color);
 }
-.cadastro:hover{
+.cadastro:hover {
     opacity: 70%;
     transition: var(--transition);
 }
-.login{
-    border:0.5px, solid var(--third-color);
-}
-.nav-item .bi-cart{
+.nav-item .bi-cart {
     font-size: 1.2rem;
 }
-
-
 
 /* CAROUSEL */
 .myCarousel {
     margin-bottom: 4rem;
 }
-.hero h1{
+.hero h1 {
     color: #ffffff;
 }
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
     background-color: black;
 }
 
@@ -142,4 +137,42 @@ nav .nav-item{
 
 .carousel-item {
     height: 32rem;
+}
+
+/* LOGIN */
+.logarCadastro {
+    padding-top: 5rem;
+}
+
+.inscreva {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 4.3%;
+    border-bottom-left-radius: 4.3%;
+}
+
+.bemvindo .login {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--secondary-color);
+    border-top-right-radius: 4.3%;
+    border-bottom-right-radius: 4.3%;
+}
+
+.social-icons .bi:hover {
+    transition: ease 0.3s;
+    color: #a5a5b0;
+}
+
+/* btn prev && prev */
+
+#btn-prev {
+    position: absolute;
+    top: -20%;
+    left: -13%;
+}
+
+#btn-next {
+    position: absolute;
+    right: -13%;
+    top: -20%;
 }
