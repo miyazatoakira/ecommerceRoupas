@@ -23,9 +23,9 @@ class Conexao {
     }
 
     public function insereCliente($user_name, $primeiro_nome, $sobrenome, $sexo, $telefone, $cpf, $email, $senha, $numero, $obs) {
-        $insere = $this->pdo->prepare("INSERT INTO Cliente (User_name, Primeiro_nome, Sobrenome, Sexo, Telefone, CPF, Email, Senha, Numero_residencial, Obs) 
-                                       VALUES (:user_name, :primeiro_nome, :sobrenome, :sexo, :telefone, :cpf, :email, :senha, :numero, :obs)");
-        $insere->bindValue(':user_name', $user_name);
+        $insere = $this->pdo->prepare("INSERT INTO Cliente (Nome, Primeiro_nome, Sobrenome, Sexo, Telefone, CPF, Email, Senha, Numero_residencial, Obs) 
+                                       VALUES (:nome, :primeiro_nome, :sobrenome, :sexo, :telefone, :cpf, :email, :senha, :numero, :obs)");
+        $insere->bindValue(':nome', $user_name);
         $insere->bindValue(':primeiro_nome', $primeiro_nome);
         $insere->bindValue(':sobrenome', $sobrenome);  // Corrigido de Sobrebome para Sobrenome
         $insere->bindValue(':sexo', $sexo);

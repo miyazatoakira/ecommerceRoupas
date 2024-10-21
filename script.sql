@@ -1,4 +1,4 @@
-CREATE DATABASE LojaRoupas CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE LojaRoupas CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;        
 
 USE LojaRoupas;
 -- drop database LojaRoupas;
@@ -7,7 +7,7 @@ USE LojaRoupas;
 -- Criação da tabela Cliente
 CREATE TABLE Cliente (
     IDcliente INT AUTO_INCREMENT PRIMARY KEY,
-    User_name VARCHAR(20) NOT NULL,
+    Nome VARCHAR(20) NOT NULL,
     Primeiro_nome VARCHAR(10) NOT NULL, 
     Sobrebome VARCHAR(10) NOT NULL,
     Sexo BOOLEAN,
